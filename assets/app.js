@@ -1,30 +1,31 @@
 var questions = [
-    {
-      question: "Question 1: Who is Arsenal's all-time leading goal scorer?",
-      options: ["Dennis Bergkamp", "Ian Wright", "Thierry Henry", "Robin van Persie"],
-      answerIndex: 2
-    },
-    {
-      question: "Question 2: Which manager led Arsenal to their famous 'Invincibles' season?",
-      options: ["Arsène Wenger", "George Graham", "Herbert Chapman", "Bertie Mee"],
-      answerIndex: 0
-    },
-    {
-      question: "Question 3: Who is the current captain of Arsenal FC?",
-      options: ["Pierre-Emerick Aubameyang", "Bukayo Saka", "Martin Ødegaard", "Granit Xhaka"],
-      answerIndex: 3
-    },
-    {
-      question: "Question 4: Which stadium is the home ground of Arsenal FC?",
-      options: ["Old Trafford", "Anfield", "Emirates Stadium", "Stamford Bridge"],
-      answerIndex: 2
-    },
-    {
-      question: "Question 5: Who is Arsenal's most expensive signing in terms of transfer fee?",
-      options: ["Mesut Özil", "Nicolas Pépé", "Alexandre Lacazette", "Pierre-Emerick Aubameyang"],
-      answerIndex: 1
-    },
-  ];
+  {
+    question: "Question 1: What is the capital of Australia?",
+    options: ["Sydney", "Melbourne", "Canberra", "Perth"],
+    answerIndex: 2
+  },
+  {
+    question: "Question 2: Which country is known as the 'Land of the Rising Sun'?",
+    options: ["China", "Japan", "India", "Thailand"],
+    answerIndex: 1
+  },
+  {
+    question: "Question 3: What is the largest ocean in the world?",
+    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    answerIndex: 3
+  },
+  {
+    question: "Question 4: Which African country is known as the 'Pearl of Africa'?",
+    options: ["Egypt", "Kenya", "Uganda", "South Africa"],
+    answerIndex: 2
+  },
+  {
+    question: "Question 5: Which mountain range is the longest in the world?",
+    options: ["Rocky Mountains", "Himalayas", "Andes", "Alps"],
+    answerIndex: 1
+  },
+];
+
   
   
   var currentQuestionIndex = 0;
