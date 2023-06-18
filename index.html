@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Da Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Da Quiz!</h1>
-  </header>
-
-  <main>
-    <section id="start-screen">
-      <h2>Welcome to the Da Quiz!</h2>
-      <button id="start-btn">Start</button>
-    </section>
-
-    <section id="quiz-screen" style="display: none;">
-      <h2>Question</h2>
-      <p id="question-text"></p>
-      <div id="choices"></div>
-      <p id="message"></p>
-      <button id="next-btn" style="display: none;">Next</button>
-    </section>
-
-    <section id="game-over-screen" style="display: none;">
-      <h2>Game Over!</h2>
-      <p>Your score: <span id="final-score"></span></p>
-      <form id="initials-form">
-        <label for="initials">Enter your initials:</label>
-        <input type="text" id="initials" required maxlength="3" pattern="[A-Za-z]{3}">
-        <button type="submit">Save</button>
-      </form>
-    </section>
-  </main>
+  <h1>Code Quiz</h1>
+  <div id="quiz-container">
+    <button id="start-btn">Start Quiz!</button>
+    <div id="question-container">
+      <h2 id="question"></h2>
+      <ul id="choices"></ul>
+    </div>
+    <div id="result-container">
+      <p id="result"></p>
+    </div>
+    <div id="timer-container">
+      <p id="timer"></p>
+    </div>
+    <div id="score-container">
+      <p id="score"></p>
+    </div>
+    <div id="initials-container">
+      <input type="text" id="initials" placeholder="Enter your initials">
+      <button id="save-btn" disabled>Save</button>
+    </div>
+  </div>
 
   <script src="./assets/app.js"></script>
 </body>
-
 </html>
