@@ -11,7 +11,7 @@ var questions = [
     },
     {
       question: "Question 3: Who is the current captain of Arsenal FC?",
-      options: ["Pierre-Emerick Aubameyang", "Bukayo Saka", "Héctor Bellerín", "Granit Xhaka"],
+      options: ["Pierre-Emerick Aubameyang", "Bukayo Saka", "Martin Ødegaard", "Granit Xhaka"],
       answerIndex: 3
     },
     {
@@ -50,6 +50,25 @@ var questions = [
     startTimer();
     displayQuestion();
   }
+
+  function displayQuestion() {
+    var currentQuestion = questions[currentQuestionIndex];
+    questionNumberSpan.textContent = currentQuestionIndex + 1;
+    questionText.textContent = currentQuestion.question;
+    optionsContainer.innerHTML = "";
+  
+    currentQuestion.options.forEach(function(option, index) {
+      var optionBtn = document.createElement("button");
+      optionBtn.classList.add("option-btn");
+      optionBtn.textContent = option;
+      optionBtn.addEventListener("click", function() {
+        checkAnswer(index);
+      });
+      optionsContainer.appendChild(optionBtn);
+    });
+    document.getElementById("timer").textContent = timeLeft;
+  }
+  
   
   function displayQuestion() {
     var currentQuestion = questions[currentQuestionIndex];
