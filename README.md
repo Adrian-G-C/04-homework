@@ -11,7 +11,7 @@ N/A
 
 ## Usage
 
-The webapp is sued to test the users knowledge about geography. 
+The webapp is used to test the users knowledge about geography. 
 
 ## Credits
 
