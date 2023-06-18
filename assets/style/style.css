@@ -41,6 +41,32 @@ button:hover {
   margin-top: 20px;
 }
 
+#choices {
+  list-style-type: none;
+  padding: 0;
+}
+
+#choices li {
+  margin-top: 10px;
+}
+
+.choice-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choice-btn:hover {
+  background-color: #dddddd;
+}
+
 #result-container {
   display: none;
   margin-top: 10px;
