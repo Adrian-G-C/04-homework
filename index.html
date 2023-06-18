@@ -5,28 +5,34 @@
   <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
 </head>
 <body>
-  <body>
+  <header>
     <h1>Da Quiz!</h1>
-    <div id="quiz-container">
-      <button id="start-btn">Start Quiz</button>
-      <div id="question-container">
-        <h2 id="question"></h2>
-        <ul id="choices"></ul>
-      </div>
-      <div id="result-container">
-        <p id="result"></p>
-      </div>
-      <div id="timer-container">
-        <p id="timer"></p>
-      </div>
-      <div id="score-container">
-        <p id="score"></p>
-      </div>
-      <div id="initials-container">
-        <input type="text" id="initials" placeholder="Enter your initials">
-        <button id="save-btn" disabled>Save</button>
-      </div>
+  </header>
+
+  <div id="start-container">
+    <h2>Welcome DA Quiz!</h2>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container" class="hide">
+    <h2>Question <span id="question-number"></span></h2>
+    <p id="question-text"></p>
+    <div id="options-container">
+      <button class="option-btn"></button>
+      <button class="option-btn"></button>
+      <button class="option-btn"></button>
+      <button class="option-btn"></button>
     </div>
+    <p id="feedback"></p>
+  </div>
+
+  <div id="end-container" class="hide">
+    <h2>Quiz Over!</h2>
+    <p>Your score: <span id="score"></span></p>
+    <label for="initials">Enter your initials:</label>
+    <input type="text" id="initials" placeholder="Your initials">
+    <button id="save-btn">Save Score</button>
+  </div>
 
   <script src="./assets/app.js"></script>
 </body>
